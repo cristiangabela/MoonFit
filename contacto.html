@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Favicon/favicon-96x96.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/Favicon/web-app-manifest-192x192.png" alt="Logo de MoonFit" width="200">
+            <h3>Tu compañero de Fitness definitivo</h3>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./acceso.html">Acceso</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>
+            Ponte en contacto para resolver cualquier duda:
+        </p>
+        <!--Programa que recibirá las consultas y conectará con una IA que devuelva una respuesta al correo del consultor-->
+        <form action="consultas.php" method="post" enctype="text/plain">
+            <label for="text">Nombre:</label>
+            <p><input type="text" required placeholder="Tu nombre"></p>
+            <label for="text">Apellidos:</label>
+            <p><input type="text" required placeholder="Tu apellido"></p>
+            <label for="email">Dirección de correo:</label>
+            <p><input type="email" id="email" name="email" required placeholder="tuCorreo@tuCorreo.com"></p>
+            <label for="consulta">Escribe tu consulta:</label>
+            <p><textarea id="consulta" name="consulta" cols="40" rows="10" required></textarea></p>
+            <label for="enviar"></label>
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>
