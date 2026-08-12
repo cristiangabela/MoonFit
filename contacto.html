@@ -35,14 +35,20 @@
         </p>
         <!--Programa que recibirá las consultas y conectará con una IA que devuelva una respuesta al correo del consultor-->
         <form action="consultas.php" method="post" enctype="text/plain">
-            <label for="text">Nombre:</label>
-            <p><input type="text" required placeholder="Tu nombre"></p>
-            <label for="text">Apellidos:</label>
-            <p><input type="text" required placeholder="Tu apellido"></p>
-            <label for="email">Dirección de correo:</label>
-            <p><input type="email" id="email" name="email" required placeholder="tuCorreo@tuCorreo.com"></p>
-            <label for="consulta">Escribe tu consulta:</label>
-            <p><textarea id="consulta" name="consulta" cols="40" rows="10" required></textarea></p>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="text">Nombre:</label>
+                <p><input type="text" required placeholder="Tu nombre"></p>
+                <label for="text">Apellidos:</label>
+                <p><input type="text" required placeholder="Tu apellido"></p>
+                <label for="email">Dirección de correo:</label>
+                <p><input type="email" id="email" name="email" required placeholder="tuCorreo@tuCorreo.com"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Consulta</legend>
+                <label for="consulta">Escribe tu consulta:</label>
+                <p><textarea id="consulta" name="consulta" cols="40" rows="10" required></textarea></p>
+            </fieldset>
             <label for="enviar"></label>
             <input type="submit" name="enviar" value="Enviar">
         </form>
