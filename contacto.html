@@ -37,10 +37,10 @@
         <form action="consultas.php" method="post" enctype="text/plain">
             <fieldset>
                 <legend>Datos personales</legend>
-                <label for="text">Nombre:</label>
-                <p><input type="text" required placeholder="Tu nombre"></p>
-                <label for="text">Apellidos:</label>
-                <p><input type="text" required placeholder="Tu apellido"></p>
+                <label for="nombre">Nombre:</label>
+                <p><input type="text" id="nombre" name="nombre" required placeholder="Tu nombre"></p>
+                <label for="apellidos">Apellidos:</label>
+                <p><input type="text" id="apellidos" name="apellidos" required placeholder="Tu apellido"></p>
                 <label for="email">Dirección de correo:</label>
                 <p><input type="email" id="email" name="email" required placeholder="tuCorreo@tuCorreo.com"></p>
             </fieldset>
@@ -50,7 +50,7 @@
                 <p><textarea id="consulta" name="consulta" cols="40" rows="10" required></textarea></p>
             </fieldset>
             <label for="enviar"></label>
-            <input type="submit" name="enviar" value="Enviar">
+            <input type="submit" id="enviar" name="enviar" value="Enviar">
         </form>
     </main>
 </body>
