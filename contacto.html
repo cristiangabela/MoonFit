@@ -15,16 +15,16 @@
             <img src="./images/Favicon/web-app-manifest-192x192.png" alt="Logo de MoonFit" width="200">
             <h3>Tu compañero de Fitness definitivo</h3>
         </div>
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li>
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./acceso.html">Acceso</a>
-                </li>
-                <li>
                     <a href="./contacto.html">Contacto</a>
+                </li>
+                <li class="boton-acceso">
+                    <a href="./acceso.html">Acceder</a>
                 </li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
             Ponte en contacto para resolver cualquier duda:
         </p>
         <!--Programa que recibirá las consultas y conectará con una IA que devuelva una respuesta al correo del consultor-->
-        <form action="consultas.php" method="post" enctype="text/plain">
+        <form id="form-consulta" action="consultas.php" method="post" enctype="text/plain">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="nombre">Nombre:</label>
