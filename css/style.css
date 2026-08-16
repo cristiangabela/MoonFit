@@ -1,37 +1,72 @@
-*{
+body {
+    background: linear-gradient(to bottom, rgb(0, 166, 255), white);
     background-color: cornflowerblue;
 }
+
 /*
 Navegacion principal
 */
-.navegacion{
-    
+.navegacion {
+    border: solid;
+    border-radius: 2px;
+    border-color: burlywood;
+    position: fixed;
+    top: 10px;
+    background-color: black;
+    width: 100%;
 }
-.navegacion ul{
-    display: inline-flex;
+
+header {
+    background-color: lightgray;
+}
+
+.navegacion ul {
+    display: flex;
     text-align: center;
     list-style: none;
     gap: 30px;
 }
 
-.boton-acceso{
+.boton-acceso {
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 70%;
+    margin-left: auto;
+    margin-right: 30px;
+    ;
 }
+
 /*
 Formulario de consulta
 */
-#form-consulta{
+#form-consulta {
     border-style: solid;
     border-width: 5px;
     border-color: black;
 }
-#form-consulta label{
+
+#form-consulta label {
     font-weight: bold;
 }
-#form-consulta #enviar{
-    
+
+#form-consulta #enviar {
+
     font-size: medium;
+    font-weight: bold;
+}
+
+#accesoUsuarios {
+    position: float;
+    border: solid, 3px;
+    border-color: black;
+    padding:50px 0px 50px 70px;
+    margin-top: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#opcionesLogin{
+    list-style: none;
+}
+
+.negrita{
     font-weight: bold;
 }

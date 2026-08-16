@@ -14,7 +14,7 @@
             <h3>MoonFit</h3>
             <img src="./images/Favicon/web-app-manifest-192x192.png" alt="Logo de MoonFit" width="200">
             <div>
-                <p>Tu compañero de fitness definitivo</p>
+                <h3>Tu compañero de Fitness definitivo</h3>
             </div>
         </div>
         <nav class="navegacion">
@@ -31,9 +31,23 @@
             </ul>
         </nav>
     </header>
-    <div>
-
-    </div>
+    <main>
+        <form id="accesoUsuarios" action="accesoUsuarios.php" method="post">
+            <label class="negrita" id="nombreUsuario">Nombre de usuario</label>
+            </br>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" size="20" maxlength="15" value="" />
+            </br>
+            </br>
+            </br>
+            <label class="negrita" id="pass">Constraseña </label>
+            </br>
+            <input type="password" name="pass" value="" />
+        </form>
+        <ul id="opcionesLogin">
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="restore.html">No recuerdo la contraseña</a></li>
+        </ul>
+    </main>
 </body>
 
 </html>
